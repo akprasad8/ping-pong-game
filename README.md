@@ -45,46 +45,78 @@ To run the game, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/pong-game-replica.git
-Install SFML if you haven't already. You can download it from SFML's official website or use your package manager.
+   git clone https://github.com/sagarstormborn/ping-a-pong.git
+2. Install SFML if you haven't already. You can download it from [SFML's official](https://www.sfml-dev.org/index.php) website or use your package manager:
 
-Compile the game using a C++ compiler, ensuring you link against the SFML libraries.
+3. Compile the game using a C++ compiler, ensuring you link against the SFML libraries:
+   ```bash
+   g++ -o pong main.cpp -lsfml-graphics -lsfml-window -lsfml-system
 
-bash
-Copy code
-g++ -o pong main.cpp -lsfml-graphics -lsfml-window -lsfml-system
-Run the compiled executable:
+4. Run the compiled executable:
 
-bash
-Copy code
-./pong
-Game Controls
-Player 1 (P1):
+   ```bash
+   ./pong
+
+## Game Controls
+
+### Player 1 (P1):
 
 Up: Arrow Up (⬆️)
 Down: Arrow Down (⬇️)
-Player 2 (P2):
+
+### Player 2 (P2):
 
 Up: 'W' key
 Down: 'S' key
-Gameplay Instructions
+
+### Gameplay Instructions
+
 Use the controls to move your paddle and bounce the ball.
 Score points by getting the ball past your opponent's paddle.
 The first player to score 5 points wins the match.
-Code Structure
-The code for this game is organized into different files and classes to maintain clarity and adhere to OOP principles. Here's an overview of the code structure:
 
-main.cpp: Contains the game's main function, window setup, and game loop.
-Game.hpp and Game.cpp: Defines the Game class responsible for handling game logic.
-Player.hpp and Player.cpp: Defines the Player class for managing player-specific attributes and controls.
-Ball.hpp and Ball.cpp: Implements the Ball class for ball behavior.
-Button.hpp and Button.cpp: Handles button creation and interactions.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Code Structure
 
-Acknowledgments
+The codebase for this game is thoughtfully organized into various files and classes to ensure clarity and adhere to Object-Oriented Programming (OOP) principles. Here's an overview of the key components:
+
+#### `main.cpp`:
+This file contains the game's main function, window setup, and the core game loop.
+
+#### `GameState.h`:
+This file provides a framework for managing the game state, ensuring smooth transitions between different game screens.
+
+#### `MainMenu.h` and `MainMenu.cpp`:
+These files define the main menu screen and its functionality, allowing players to start the game or quit.
+
+#### `MainGame.h` and `MainGame.cpp`:
+Here, you'll find the code for the main gameplay screen, where the core action of the game unfolds.
+
+#### `Result.h` and `Result.cpp`:
+These files manage the display of results at the end of a game, showcasing the winner and loser.
+
+#### `Entity.h`:
+This fundamental class defines the properties of game entities, including sprites, textures, and text elements.
+
+#### `PaddlePlayer.h` and `PaddlePlayer.cpp`:
+The `PaddlePlayer` class, extending from `Entity.h`, handles the behavior and rendering of the paddle entities.
+
+#### `Ball.h`and `Ball.cpp`:
+The `Ball` class, which also extends from `Entity.h`, governs the ball's attributes and rendering.
+
+#### `Score.h` and `Score.cpp`:
+These files are dedicated to tracking and updating the game's score.
+
+#### `Graphics` Folder:
+Contains graphical assets such as images for the ball and paddles, organized for visual elements in the game.
+
+#### `Sounds` Folder:
+Houses sound files, including bounce sound effects and background music, enhancing the gaming experience.
+
+
+### Acknowledgments
 Thanks to the creators of SFML for providing a fantastic library for game development.
 
-Author
+### Author
 Sagar Parmar
+
 Feel free to reach out with any questions or suggestions!
