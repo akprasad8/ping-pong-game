@@ -2,6 +2,15 @@
 
 This repository contains a C++ implementation of a Pong game replica using the Simple and Fast Multimedia Library (SFML). The game adheres to a specific assignment with various features and requirements.
 
+<table>
+  <tr>
+    <td><img src="assets/menu.PNG" alt="Image 2" width="300"></td>
+    <td><img src="assets/game.PNG" alt="Image 1" width="300"></td>
+    <td><img src="assets/result.PNG" alt="Image 3" width="300"></td>
+  </tr>
+</table>
+
+
 ## Assignment Overview
 
 ### Features and Requirements
