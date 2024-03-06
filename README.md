@@ -54,7 +54,7 @@ To run the game, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/sagarstormborn/ping-a-pong.git
+   git clone https://github.com/akankshaprasad8/ping-pong-game.git
 2. Install SFML if you haven't already. You can download it from [SFML's official](https://www.sfml-dev.org/index.php) website or use your package manager:
 
 3. Compile the game using a C++ compiler, ensuring you link against the SFML libraries:
@@ -126,6 +126,6 @@ Houses sound files, including bounce sound effects and background music, enhanci
 Thanks to the creators of SFML for providing a fantastic library for game development.
 
 ### Author
-Sagar Parmar
+Akanksha Prasad
 
 Feel free to reach out with any questions or suggestions!
